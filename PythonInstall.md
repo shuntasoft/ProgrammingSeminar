@@ -5,11 +5,11 @@
   
 ##1.Python本体のインストール
 
-　日本Pythonユーザー会にある [ダウンロードページ](http://www.python.jp/Zope/Zope/download/pythoncore)からダウンロード。64bitだとうまくいかない点があったので、32bit版を入手すること。また、最新バージョンは不安定な場合があるので少し古いバージョンの方がよい。ここではPython3.3を用いて説明をしていく。
+　日本Pythonユーザー会にある [ダウンロードページ](http://www.python.jp/Zope/Zope/download/pythoncore)からダウンロード。64bitだとうまくいかない点があったので、32bit版を入手すること。また、最新バージョンは不安定な場合があるので少し古いバージョンの方がよい。ここではPython3.4を用いて説明をしていく。
 
 
 ###インストール時はパスの設定に注意 
-　インストールは、インストーラの指示に従っていれば問題なく進められる。1点だけ気をつけないといけないのはパスの設定。インストール中の"Customize Python 3.3.0"のステップで"Add python.exe to Path"の項目の横にある×をクリックし、"will be installed on local hard drive"を選択すると、自動的にパスの設定が行われる。
+　インストールは、インストーラの指示に従っていれば問題なく進められる。1点だけ気をつけないといけないのはパスの設定。インストール中の"Customize Python 3.4.0"のステップで"Add python.exe to Path"の項目の横にある×をクリックし、"will be installed on local hard drive"を選択すると、自動的にパスの設定が行われる。
 
 　これを忘れると自分で入力してパスを設定する必要があるので少し面倒。そのときの手順は[こちら](http://www.pythonweb.jp/install/setup/index1.html)
 
