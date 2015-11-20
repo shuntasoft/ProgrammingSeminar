@@ -14,7 +14,7 @@ OS: Windows
 
 * 注）インストール時のパスの設定 
   
-  　インストールは ，インストーラの指示に従っていれば問題なく進められる．1 点だけ気をつけないといけないのはパスの設定．インストール中の "Customize Python 3.4.0" のステップで "Add python.exe to Path" の項目の横にある × をクリックし，"will be installed on local hard drive" を選択すると，自動的にパスの設定が行われる．これを忘れると自分で入力してパスを設定する必要があるので少し面倒．そのときの手順は[こちら](http://www.pythonweb.jp/install/setup/index1.html)．
+  　インストールは ，インストーラの指示に従っていれば問題なく進められる．1 点だけ気をつけないといけないのはパスの設定．インストール中の Customize Python 3.4.0 のステップで Add python.exe to Path の項目の横にある × をクリックし，will be installed on local hard drive を選択すると，自動的にパスの設定が行われる．これを忘れると自分で入力してパスを設定する必要があるので少し面倒．そのときの手順は[こちら](http://www.pythonweb.jp/install/setup/index1.html)．
 
 ## パッケージのインストール
 
@@ -59,7 +59,7 @@ $ easy_install <packagename>.egg
   * ver 3.5  
   * 32 bit 
   
-  ダウンロードしてくるのは "matplotlib‑1.5.0rc2‑cp35‑none‑win.whl" というファイル．これを適当なディレクトリに置き，次のコマンドを実行．
+  ダウンロードしてくるのは `matplotlib‑1.5.0rc2‑cp35‑none‑win.whl` というファイル．これを適当なディレクトリに置き，次を実行．
   
   ```
   $ pip install --use-wheel --no-index --find-links=wheelhouse matplotlib-1.4.3-cp35-none-win32.whl
@@ -71,20 +71,20 @@ $ easy_install <packagename>.egg
 ### Numpy
 
 　インストーラが用意されているので楽．[このサイト](http://sourceforge.net/projects/numpy/files/NumPy/)で，
-バージョン 1.10.1 を選び "numpy-1.10.1-win32-superpack-python3.4.exe" をダウンロード．あとはインストーラを立ち上げて指示に従っていくだけ．
+バージョン 1.10.1 を選び `numpy-1.10.1-win32-superpack-python3.4.exe` をダウンロード．あとはインストーラを立ち上げて指示に従っていくだけ．
 
 ### Scipy
 
-　Numpy とほぼ同じ．[このサイト](http://sourceforge.net/projects/scipy/files/scipy/)で，バージョン 0.16.0 を選び "scipy-0.16.0-win32-superpack-python3.4.exe" をダウンロードし，インストーラを起動すれば OK．
+　Numpy とほぼ同じ．[このサイト](http://sourceforge.net/projects/scipy/files/scipy/)で，バージョン 0.16.0 を選び `scipy-0.16.0-win32-superpack-python3.4.exe` をダウンロードし，インストーラを起動すれば OK．
 
 ### matplotlib
 
-　これも Numpy とだいたい同じ．[こちら](http://sourceforge.net/projects/matplotlib/files/matplotlib/)からバージョン 1.4.3 を選び，"windows" の中にある "matplotlib-1.4.3.win32-py3.4.exe" をダウンロードし実行．ただしこれだけでは動作しない．matplotlib を動作させるために必要な次の 3 つのパッケージをインストールする．
+　これも Numpy とだいたい同じ．[こちら](http://sourceforge.net/projects/matplotlib/files/matplotlib/)からバージョン 1.4.3 を選び，windows の中にある `matplotlib-1.4.3.win32-py3.4.exe` をダウンロードし実行．ただしこれだけでは動作しない．matplotlib を動作させるために必要な次の 3 つのパッケージをインストールする．
 
 - six
 - pyparsing
   
-  次のコマンドを実行すればOK
+  次を実行すればOK．
   
   ```
   $ pip install six
@@ -93,16 +93,8 @@ $ easy_install <packagename>.egg
 
 - dateutil
   
-  少し面倒．[こちら](https://pypi.python.org/pypi/python-dateutil)からバイナリをダウンロードし，次のコマンドを実行する．
-　
-　```
-　$ pip install --use-wheel --no-index --find-links=wheelhouse python_dateutil-2.4.2-py2.py3-none-any.whl
-　```
+  少し面倒．[こちら](https://pypi.python.org/pypi/python-dateutil)からバイナリをダウンロードし，`$ pip install --use-wheel --no-index --find-links=wheelhouse python_dateutil-2.4.2-py2.py3-none-any.whl` を実行する．
 
 ### networkx
 
-　少し厄介．[ここ](https://pypi.python.org/pypi/networkx/)から "networkx-1.10-py3.4.egg" をダウンロードし，コマンドラインで次の命令を実行する．
-　
-　```
-　$ easy_install networkx-1.10-py3.4.egg
-　```
+　少し厄介．[ここ](https://pypi.python.org/pypi/networkx/)から `networkx-1.10-py3.4.egg` をダウンロードし， `$ easy_install networkx-1.10-py3.4.egg` を実行する．
