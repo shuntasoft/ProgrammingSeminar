@@ -4,14 +4,7 @@ Author: Yu Ohori
 
 Date: Oct/9/2015
 
-OS: Mac
-
-References:
-
-* [サルでもわかる Git 入門](http://www.backlog.jp/git-guide/)
-* [SSH の公開鍵を作成し Github に登録する手順](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
-* [GitHub へ pull request する際のベストプラクティス](http://d.hatena.ne.jp/hnw/20110528)
-
+OS: OS X
 
 ## 用語の説明
 remote repository
@@ -43,7 +36,9 @@ origin
 upstream
 
 ## ローカルのみで使用する場合
+
 ### 初期設定
+
 user.name を設定
 
 `$ git config --global user.name <username>`
@@ -53,6 +48,7 @@ user.email を設定
 `$ git config --global user.email <mailaddress>`
 
 ###  SSH 接続設定
+
 ルートディレクトリへ移動
 
 `$ cd ~`
@@ -84,7 +80,7 @@ user.email を設定
 
 Github の Setting で公開鍵の内容を登録
 
-![](./image/img_00.png)
+![](../images/img_00.png)
 
 ### 基本手順
 空ディレクトリ ( 作業ディレクトリ ) を生成
@@ -114,6 +110,7 @@ Github の Setting で公開鍵の内容を登録
 `$ git commit -m "<comment>"`
 
 ### コミットに関する操作
+
 コミットの履歴を表示
 
 `$ git log`
@@ -135,6 +132,7 @@ n 個前のコミットを取消
 `$ git reset --soft/mixed/hard HEAD~n`
 
 ### ブランチに関する操作
+
 ブランチを作成
 
 `$ git branch <branchname>`
@@ -160,13 +158,14 @@ n 個前のコミットを取消
 `$ git merge <branchname>`
 
 ## 個人のリモートリポジトリを使用する場合
+
 リモートリポジトリを作成
 
-![](./image/img_01.png)
+![](../images/img_01.png)
 
 リモートリポジトリの URL をクリップボードにコピー
 
-![](./image/img_02.png)
+![](../images/img_02.png)
 
 リモートリポジトリを追加
 
@@ -183,9 +182,10 @@ n 個前のコミットを取消
 * -u: このオプションをつけると以降は `$ git push` のみでプッシュ可能
 
 ## 組織のリモートリポジトリを使用する場合
+
 目的のリポジトリ ( 以下，オリジナルリポジトリ ) をフォーク
 
-![](./image/img_03.png)
+![](../images/img_03.png)
 
 フォークしてきたリポジトリ ( 以下，ユーザリポジトリ ) をクローン
 
@@ -212,4 +212,10 @@ n 個前のコミットを取消
 `$ git push origin develop`
 
 プルリクエストを作成
-![](./image/img_04.png)
+![](../images/img_04.png)
+
+## 参考文献
+
+* [サルでもわかる Git 入門](http://www.backlog.jp/git-guide/)
+* [SSH の公開鍵を作成し Github に登録する手順](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
+* [GitHub へ pull request する際のベストプラクティス](http://d.hatena.ne.jp/hnw/20110528)
