@@ -10,17 +10,17 @@ OS: Windows
   
 ## Python 本体のインストール
 
-　日本 Python ユーザー会にある[ダウンロードページ](http://www.python.jp/Zope/Zope/download/pythoncore)からダウンロード．64 bit だとうまくいかない点があったので，32 bit 版を入手すること．また，最新バージョンは不安定な場合があるので少し古いバージョンの方がよい．ここでは Python 3.4 を用いて説明をしていく．
+　日本 Python ユーザー会にある[ダウンロードページ](http://www.python.jp/Zope/Zope/download/pythoncore)からダウンロード．64 bit だとうまくいかない点があったので，32 bit 版を入手すること．また，最新バージョンは不安定な場合があるので少し古いバージョンの方がよい．ここでは Python 3.4 を用いて説明をしていく．
 
-* 注）インストール時のパスの設定 
+* 注）インストール時のパスの設定 
   
   　インストールは ，インストーラの指示に従っていれば問題なく進められる．1 点だけ気をつけないといけないのはパスの設定．インストール中の Customize Python 3.4.0 のステップで Add python.exe to Path の項目の横にある × をクリックし，will be installed on local hard drive を選択すると，自動的にパスの設定が行われる．これを忘れると自分で入力してパスを設定する必要があるので少し面倒．そのときの手順は[こちら](http://www.pythonweb.jp/install/setup/index1.html)．
 
 ## パッケージのインストール
 
-　まず，Python のパッケージを簡単にダウンロードできるツールである **pip** を導入する必要がある．Python 3.3 では pip を自動でインストールしてくれるので，バージョンアップのみ行えば OK．次に，コマンドラインを管理者権限で立ち上げて（Windows キー押す → cmd と入力 → Ctrl と Shift 押しながら Enter キー），`$ python -m pip install --upgrade pip` を入力すると，pip が最新版に更新される．これ以降は `$ pip install <packagename>` でパッケージのインストールができる．
+　まず，Python のパッケージを簡単にダウンロードできるツールである **pip** を導入する必要がある．Python 3.3 では pip を自動でインストールしてくれるので，バージョンアップのみ行えば OK．次に，コマンドラインを管理者権限で立ち上げて（Windows キー押す → cmd と入力 → Ctrl と Shift 押しながら Enter キー），`$ python -m pip install --upgrade pip` を入力すると，pip が最新版に更新される．これ以降は `$ pip install <packagename>` でパッケージのインストールができる．インストールされているパッケージの一覧は `$ pip freeze` で確認可能なので，各パッケージをインストールするたびに確認しておくと安心．
 
-* 例）Numpy をインストールしたい場合は
+* 例）Numpy をインストールしたい場合
   
   ```
   $ pip install Numpy
@@ -64,9 +64,6 @@ $ easy_install <packagename>.egg
   ```
   $ pip install --use-wheel --no-index --find-links=wheelhouse matplotlib-1.4.3-cp35-none-win32.whl
   ```
-
-
-　それぞれのインストール方法を順番に解説する．インストールされているパッケージの一覧は `$ pip freeze` で確認可能なので，各パッケージをインストールするたびに確認しておくと安心．
 
 ### Numpy
 
