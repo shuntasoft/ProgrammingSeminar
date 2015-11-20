@@ -4,7 +4,7 @@ Author: Keisuke Sugawara, Yu Ohori
 
 Date: Nov. 20, 2015
 
-OS: Windows, OS X
+OS: Windows, OS X
 
 ## Python のインストール
 
@@ -13,8 +13,6 @@ OS: Windows, OS X
 [www.python.org](http://www.python.org/downloads/windows) から  ` Windows x86 MSI installer` (32 bit) をダウンロード．今回は Python 3.4.3 をインストール．
 
 Add python.exe to Path の項目で will be installed on local hard drive を選択すると Path が自動で設定される．
-
-![](../images/img06.png)
 
 ### OS X の場合
 
@@ -30,11 +28,9 @@ Add python.exe to Path の項目で will be installed on local hard drive を選
 
 [こちら](http://sourceforge.net/projects/scipy/files/scipy/)で  `scipy-<version>-win32-superpack-python3.4.exe` をダウンロードした後，起動．現在の Scipy の最新版は 0.16.1．
 
-以下の packages.txt を用意して残りの主要なパッケージを一括でインストール．
+以下の packages.txt を用意して残りの主要なパッケージを `$ pip install -r packages.txt` で一括インストール．
 
-`$ pip install -r packages.txt`
-
-```packages.txt
+``` packages.txt
 appnope>=0.1.0
 chainer>=1.4.1
 cycler>=0.9.0
@@ -80,6 +76,4 @@ wheel>=0.26.0
 
 ### OS X の場合
 
-一括でインストール．
-
-`$ pip3 install -r packages.txt`
+`$ pip3 install -r packages.txt` で一括インストール．
