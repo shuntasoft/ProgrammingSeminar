@@ -2,38 +2,26 @@
 
 Author: Yu Ohori
 
-Date: Oct/9/2015
+Date: Oct. 9, 2015
 
 OS: OS X
 
 ## 用語の説明
-remote repository
 
-local repository
-
-index
-
-working tree
-
-add
-
-commit
-
-push
-
-pull
-
-branch
-
-merge
-
-fork
-
-clone
-
-origin
-
-upstream
+* remote repository
+* local repository
+* index
+* working tree
+* add
+* commit
+* push
+* pull
+* branch
+* merge
+* fork
+* clone
+* origin
+* upstream
 
 ## ローカルのみで使用する場合
 
