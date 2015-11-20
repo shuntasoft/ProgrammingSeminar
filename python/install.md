@@ -24,13 +24,13 @@ Add python.exe to Path の項目で will be installed on local hard drive を選
 
 `$ python -m pip install --upgrade pip` で pip を更新（管理者権限で実行）．
 
-[こちら](http://sourceforge.net/projects/numpy/files/NumPy/)で `numpy-<version>-win32-superpack-python3.4.exe` をダウンロードした後，起動．現在の Numpy の最新版は 1.10.1 ．
+[sourceforge.net](http://sourceforge.net/projects/numpy/files/NumPy/)で `numpy-<version>-win32-superpack-python3.4.exe` をダウンロードした後，起動．現在の Numpy の最新版は 1.10.1 ．
 
-[こちら](http://sourceforge.net/projects/scipy/files/scipy/)で  `scipy-<version>-win32-superpack-python3.4.exe` をダウンロードした後，起動．現在の Scipy の最新版は 0.16.1．
+[sourceforge.net](http://sourceforge.net/projects/scipy/files/scipy/)で  `scipy-<version>-win32-superpack-python3.4.exe` をダウンロードした後，起動．現在の Scipy の最新版は 0.16.1．
 
 以下の packages.txt を用意して残りの主要なパッケージを `$ pip install -r packages.txt` で一括インストール．
 
-``` packages.txt
+```packages.txt
 appnope>=0.1.0
 chainer>=1.4.1
 cycler>=0.9.0
